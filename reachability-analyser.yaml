@@ -37,12 +37,12 @@ Parameters:
     Description: Insert broken NACL rule
     Default: "false"
     AllowedValues:
-      - "false"
-      - "true"
+      - false
+      - true
 
 Conditions:
 
-  InsertBrokenNACL: !Equals [ !Ref BrokenNACL, "true" ]
+  InsertBrokenNACL: !Equals [ !Ref BrokenNACL, true ]
 
 Mappings:
 
